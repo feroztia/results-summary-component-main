@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+}
+
+body {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container {
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    max-height: 450px;
+    height: 450px;
+    border-radius: 15px;
+    
+}
+
+#left {
+    background: rgb(46,43,233);
+    background: linear-gradient(0deg, rgba(46,43,233,1) 51%, rgba(120,87,255,1) 100%);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#left h4 {
+    color: #ffffff;
+    opacity: 0.7;
+    padding-top: 40px;
+    text-align: center;
+}
+
+#circle {
+    display: flex; 
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 150px;
+    background: rgb(120,87,255);
+    background: linear-gradient(0deg, rgba(120,87,255,1) 20%, rgba(46,43,233,1) 69%);
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: 80px;
+    list-style: none;
+}
+
+#score {
+    color: #ffffff;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+#from {
+    color: #ffffff;
+    opacity: 0.7;
+}
+
+#left h2 {
+    color: #ffffff;
+    padding-top: 25px;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+#left p {
+    padding-top: 10px;
+    line-height: 1.4rem;
+    color: #ffffff;
+    opacity: 0.7;
+    text-align: center;
+    margin: 0 40px;
+    font-size: 0.8rem;
+}
+
+#right {
+    background-color: #ffffff;
+    color: #303b5a;
+    padding: 0 30px;
+    border-radius: 0 15px 15px 0;
+}
+
+#right h3 {
+    padding-top: 40px;
+}
+
+#reaction {
+    background-color: #ffebeb;
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+#memory {
+    background-color: #fcf2de;
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    display: flex; 
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+#verbal {
+    background-color: #e3fff8;
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    display: flex; 
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+#visual {
+    background-color: #e3e6ff;
+    border-radius: 15px;
+    height: auto;
+    width: 100%;
+    margin-top: 15px;
+    display: flex; 
+    flex-wrap: wrap;
+    list-style: none;
+    align-items: center;
+}
+
+#reaction img,
+#memory img,
+#verbal img,
+#visual img,
+.li-1 {
+    margin: 0;
+    padding: 5px;
+}
+
+#reaction .li-1 {
+    font-weight: 700;
+    color: #ff5757;
+}
+
+#memory .li-1 {
+    font-weight: 700;
+    color: #ffb01f;
+}
+
+#verbal .li-1 {
+    font-weight: 700;
+    color: #00bd91;
+}
+
+#visual .li-1 {
+    font-weight: 700;
+    color: #1125d4;
+}
+
+.li-2 {
+    font-weight: 800;
+}
+
+#reaction .li-2 {
+    padding-left: 25px;
+}
+
+#memory .li-2 {
+    padding-left: 28px;
+}
+
+#verbal .li-2 {
+    padding-left: 42px;
+}
+
+#visual .li-2 {
+    padding-left: 45px;
+}
+
+.li-3 {
+    font-weight: 800;
+    opacity: 0.6;
+}
+
+button {
+    margin-top: 40px;
+    background-color: #303b5a;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    border: none;
+    font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #586DA6;
+}
+
+
+@media (max-width: 600px) {
+    #container {
+        display: block;
+        width: 90%;
+        margin: 20px auto; 
+    }
+
+    #left {
+        border-radius: 15px 15px 0 0; 
+    }
+
+    #left h4 {
+        padding-top: 20px;
+    }
+
+    #circle {
+        display: flex; 
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        width: 150px;
+        margin-top: 20px;
+        margin-left: 150px;
+    }
+
+    #left h2 {
+        padding-top: 15px;
+    }
+    
+    #left p {
+        padding-top: 10px;
+        margin: 0 40px;
+    }
+
+    #right {
+        background-color: #ffffff;
+        border-radius: 0 0 15px 15px;
+    }
+
+    #reaction .li-2 {
+        padding-left: 150px;
+    }
+    
+    #memory .li-2 {
+        padding-left: 153px;
+    }
+    
+    #verbal .li-2 {
+        padding-left: 167px;
+    }
+    
+    #visual .li-2 {
+        padding-left: 170px;
+    }
+
+    button {
+        margin-top: 20px; 
+        width: 100%;
+        height: 50px;
+    }
+}
